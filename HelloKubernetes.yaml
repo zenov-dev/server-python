@@ -1,21 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
-  labels:
-    app: nginx
+  name: hello-world
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: hello-world
   template:
     metadata:
       labels:
-        app: nginx
+        app: hello-world
     spec:
       containers:
-      - name: nginx
-        image: ghcr.io/ZenoV/Server-python:latest
-        ports:
-        - containerPort: 80
+      - name: hello-world
+        image: ghcr.io/Zenov/Server-python:latest
+        imagePullPolicy: Always
