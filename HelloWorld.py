@@ -1,8 +1,22 @@
-import time
+def besked(navn):
+    """
+    Returnerer en Hello World besked.
 
-i = 1
+    Args:
+        navn (str): Navnet på personen.
 
-while True:
-    print("Hello, World from Kubernetes! # " + str(i), flush=True)
-    i = i+1
-    time.sleep(1.0)
+    Returns:
+        str: En hilsen.
+    """
+    return f"Hello World, {navn}"
+
+
+navne = ["Anders", "Mette", "Peter"]
+
+for navn in navne:
+    if navn == "Anders":
+        print(besked(navn))
+    elif navn == "Mette":
+        print(besked(navn))
+    else:
+        print(f"Hello World, ukendt bruger: {navn}")
