@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ghcr.io/USERNAME/REPOSITORY:latest
+        image: ghcr.io/ZenoV/Server-python:latest
         ports:
         - containerPort: 80
