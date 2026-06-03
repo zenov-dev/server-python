@@ -5,7 +5,8 @@ FROM python:3.14-slim
 WORKDIR /app
 
 # Kopier alle filler fra
-COPY . .
+#COPY . .
+COPY HelloWorld.py .
 
 # kør scriptet, når docker container starter
 CMD ["python", "HelloWorld.py"]
